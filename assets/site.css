@@ -429,3 +429,23 @@ h2 {
     transition: none !important;
   }
 }
+
+/* ===== Variante A : site actuel + emprunts à Argon ===== */
+@font-face {
+  font-family: "Archivo Expanded";
+  src: url("fonts/archivo-expanded-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --sand-bright: #efe7da;   /* titres, noms : éclat du halo */
+  --sand-body: #a8a49e;     /* texte courant : pierre */
+  --accent: #c8b094;        /* surtitres, repères : ocre grès */
+  --sand-muted: #92806e;    /* secondaire : taupe éclairci (4,7:1) */
+}
+h1, h2, .person-name, .episode-title { font-weight: 400; }
+.subtitle { color: #c7beb2; }
+.supertitle { letter-spacing: 0.22em; color: var(--accent); font-weight: 400; }
+.index-mark, .label { color: var(--accent); letter-spacing: 0.16em; }
+a:hover, a:focus-visible { border-bottom-color: var(--accent); }
