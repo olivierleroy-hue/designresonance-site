@@ -450,8 +450,8 @@ h1, h2, .person-name, .episode-title { font-weight: 400; }
 .index-mark, .label { color: var(--accent); letter-spacing: 0.16em; }
 a:hover, a:focus-visible { border-bottom-color: var(--accent); }
 
-/* ===== Accroche « Un produit qui compte exige une mémoire collective » ===== */
-/* Deux lignes sur grand écran : « Un produit qui compte » / « exige une mémoire collective. »
+/* ===== Accroche « Un produit qui s’impose exige une mémoire collective » ===== */
+/* Deux lignes sur grand écran : « Un produit qui s’impose » / « exige une mémoire collective. »
    Sur téléphone, chaque moitié revient à la ligne naturellement. Taille du titre inchangée. */
 .hero h1 {
   max-width: none;
