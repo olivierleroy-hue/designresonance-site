@@ -449,3 +449,42 @@ h1, h2, .person-name, .episode-title { font-weight: 400; }
 .supertitle { letter-spacing: 0.22em; color: var(--accent); font-weight: 400; }
 .index-mark, .label { color: var(--accent); letter-spacing: 0.16em; }
 a:hover, a:focus-visible { border-bottom-color: var(--accent); }
+
+/* ===== Accroche « Un produit qui compte exige une mémoire collective » ===== */
+/* Deux lignes de sens, toujours : la taille suit la largeur de l'écran. */
+.hero h1 {
+  font-size: min(3rem, calc((100vw - 48px) / 15));
+  max-width: none;
+}
+.hero h1 .line {
+  display: block;
+  white-space: nowrap;
+}
+
+/* Chaîne en quatre étapes (section 02) */
+.chain {
+  counter-reset: etape;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.chain li {
+  counter-increment: etape;
+  position: relative;
+  padding-left: 2.6em;
+  text-wrap: pretty;
+}
+.chain li::before {
+  content: counter(etape);
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+.chain strong {
+  font-weight: 400;
+  color: var(--sand-bright);
+}
