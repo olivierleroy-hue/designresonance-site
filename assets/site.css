@@ -450,9 +450,9 @@ h1, h2, .person-name, .episode-title { font-weight: 400; }
 .index-mark, .label { color: var(--accent); letter-spacing: 0.16em; }
 a:hover, a:focus-visible { border-bottom-color: var(--accent); }
 
-/* ===== Accroche « Un produit qui s’impose exige une mémoire collective » ===== */
-/* Deux lignes sur grand écran : « Un produit qui s’impose » / « exige une mémoire collective. »
-   Sur téléphone, chaque moitié revient à la ligne naturellement. Taille du titre inchangée. */
+/* ===== Manifeste « Mettre en mouvement. Garder la trace. » ===== */
+/* Un geste par ligne, comme sur la bannière. Sur téléphone, retour à la ligne naturel.
+   Taille du titre inchangée. */
 .hero h1 {
   max-width: none;
   text-wrap: balance;
@@ -465,6 +465,15 @@ a:hover, a:focus-visible { border-bottom-color: var(--accent); }
     display: block;
     white-space: nowrap;
   }
+}
+
+/* Catégorie sous le manifeste, comme sur la bannière : mono, casse normale, ton discret. */
+.hero .category {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  color: var(--sand-body);
+  margin: 0 0 32px;
 }
 
 /* Chaîne en quatre étapes (section 02) */
